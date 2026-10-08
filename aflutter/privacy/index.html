@@ -41,7 +41,7 @@ nav.foot a{color:var(--soft);text-decoration:none}
 
 <p class="eyebrow">Privacy Policy</p>
 <h1>Your heart, your information.</h1>
-<p class="updated">Effective October 5, 2026</p>
+<p class="updated">Effective October 5, 2026 · Last updated October 7, 2026</p>
 
 <div class="card">
 <p><strong>The short version.</strong> Aflutter reads your heart rate through your phone's camera. The camera images are processed on your phone and are never saved or sent anywhere. We store only what the app needs to work, we never sell your information, and we never use it for advertising.</p>
@@ -58,7 +58,8 @@ nav.foot a{color:var(--soft);text-decoration:none}
 <li><strong>Camera images.</strong> When you rest your fingerprint over the camera, Aflutter measures tiny changes in colour in each frame to estimate your heart rate. Every frame is processed in real time on your device and discarded immediately. We never record, store or upload camera images or video.</li>
 <li><strong>QR codes.</strong> If you scan an invite code, the image is decoded on your device and not kept.</li>
 <li><strong>Motion sensor.</strong> Aflutter reads the motion sensor during a reading to tell how steady the phone is. This stays on your device.</li>
-<li><strong>Your setup answers and first reading</strong> are also saved on your device so the app can pick up where you left off.</li>
+<li><strong>Your setup answers</strong> (your relationship stage, how long you've been together, whether you live together, what you're curious about, and how you heard about Aflutter) are optional and stay on your phone. They are not sent to us or to anyone else.</li>
+<li><strong>Your first reading and your session history</strong> are saved on your device so the app can pick up where you left off and show your past evenings.</li>
 </ul>
 
 <h2>2. What we collect and why</h2>
@@ -74,44 +75,43 @@ nav.foot a{color:var(--soft);text-decoration:none}
 <p>We use it only to show you and the people in your live session your readings and results. We never use it, or anything derived from the camera, for advertising, marketing or data mining, and we never share it with anyone for those purposes.</p>
 
 <h3>Your account</h3>
-<p>When you open Aflutter we create an anonymous account with a random identifier. No email or phone number is needed. If you choose <strong>Sign in with Apple</strong>, we receive the name and email address Apple shares with us, which may be a private relay address if you choose "Hide My Email". We use it to keep your account and history across devices.</p>
+<p>When you open Aflutter we create an anonymous account with a random identifier. No email or phone number is needed. Signing in is optional. If you choose <strong>Sign in with Apple</strong>, we ask Apple only for your name. If Apple shares an email address with us anyway, it may be a private relay address if you chose "Hide My Email". We use this to keep your account across devices.</p>
 
 <h3>What you tell us</h3>
 <ul>
 <li>The display name you choose, and your partner's name if you enter it. Please only enter someone else's name if they're happy for you to.</li>
-<li>Your answers to the optional questions during setup: your relationship stage, how long you've been together, whether you live together, what you're curious about, and how you heard about Aflutter. We use these to personalise the app and the subscription screen.</li>
 </ul>
 
 <h3>Live sessions</h3>
-<p>To show both hearts on both phones, a live session sends the following through our database while it runs: the room code, the names of the people in it, the health data above, which challenge is running with its settings and timing, and connection status such as when someone joined or disconnected.</p>
-<p>Anyone who joins with your room code can see this information for that session. Only share your code with the person you want to play with.</p>
+<p>To show both hearts on both phones, a live session sends the following through our database while it runs: the room code, the names of the two people in it, the health data above, which challenge is running with its settings and timing, and connection status such as when someone joined or disconnected.</p>
+<p>A room code, QR code or invite link (https://aflutter.app/j/...) contains only the room code, never your name or any other information. Someone who has your code can only ask to join. Nobody can see your name or any session information until you accept them, and only the two people in the session can see it. Session rooms are deleted automatically once they're over.</p>
 
 <h3>Linking with a partner</h3>
-<p>If you link with a partner, we store each person's account identifier and name, when you linked, the invite code used, and which questions you've already seen, so the app doesn't repeat them.</p>
+<p>Linking with a partner needs both of you to agree: one person enters the other's code, and the other must accept. Link codes can be used once and expire after a short time. We store each person's account identifier and name, when you linked, and which questions you've already seen, so the app doesn't repeat them. Either of you can unlink at any time.</p>
 
-<h3>App integrity</h3>
-<p>Firebase App Check, which uses Apple's App Attest, confirms that requests come from the real Aflutter app so we can block fake or abusive traffic.</p>
+<h3>App integrity and security</h3>
+<p>Firebase App Check, which uses Apple's App Attest, confirms that requests come from the real Aflutter app so we can block fake or abusive traffic. Google's security components inside Firebase may process a device identifier, and crash and performance data, for the same purpose. We don't use this information for anything else.</p>
 
 <h3>Subscriptions</h3>
-<p>Purchases are handled entirely by Apple. We never see your payment card or billing details. We receive your subscription status so we can unlock the features you paid for.</p>
+<p>Purchases are handled entirely by Apple. We never see your payment card or billing details. We receive your subscription status so we can unlock the features you paid for. Each person needs their own subscription.</p>
 
 <h2>3. Who we share it with</h2>
 <p>We never sell your information. We never share it for advertising, and we don't track you across other companies' apps or websites. We share information only with:</p>
 <table>
 <tr><th>Who</th><th>What and why</th></tr>
-<tr><td>People in your live session</td><td>Your name, health data and results, because you asked to share them by starting or joining a session.</td></tr>
-<tr><td>Google Firebase</td><td>Stores your account, live sessions and partner links, and runs App Check, on our behalf.</td></tr>
-<tr><td>Superwall</td><td>Shows the subscription screen on our behalf. It receives your setup answers, your partner's name and your subscription status. It does not receive health data.</td></tr>
+<tr><td>The person in your live session</td><td>Your name, health data and results, because you chose to start or join a session with them and accepted them.</td></tr>
+<tr><td>Google Firebase</td><td>Stores your account, live sessions and partner links, hosts our invite links, and runs App Check and its security components, on our behalf.</td></tr>
+<tr><td>Superwall</td><td>Shows the subscription screen on our behalf. It receives your subscription status and how you interact with the subscription screen, such as views and taps. It does not receive your name, your setup answers or any health data.</td></tr>
 <tr><td>Apple</td><td>Sign in with Apple, App Attest, and processing purchases.</td></tr>
 </table>
 <p>Every service provider we share data with is bound to protect it in the same way, or to an equal standard, as this policy describes, and may use it only to provide its service to us. We may also disclose information if the law requires it, or where needed to protect someone's safety.</p>
 
 <h2>4. How long we keep it</h2>
-<p>We keep your account, partner links and session history for as long as you use Aflutter, so your history keeps working. When you ask us to delete your information, we delete it from our systems and tell our service providers to delete it too, without undue delay and within 45 days. Information stored only on your phone is removed when you delete the app.</p>
+<p>We keep your account and partner links for as long as you use Aflutter. Live session rooms are deleted automatically once they're over. When you delete your account or ask us to delete your information, we delete it from our systems and tell our service providers to delete it too, without undue delay and within 45 days. Information stored only on your phone is removed when you delete the app.</p>
 
 <h2>5. Your choices and rights</h2>
 <ul>
-<li><strong>Delete your data.</strong> Email <a href="mailto:AflutterSupport@gmail.com?subject=Delete%20my%20data">AflutterSupport@gmail.com</a> with your display name and we will delete your account and everything connected to it.</li>
+<li><strong>Delete your data.</strong> In the app, go to <strong>You › Privacy › Delete account</strong>. This deletes your account and the information connected to it. You can also email <a href="mailto:AflutterSupport@gmail.com?subject=Delete%20my%20data">AflutterSupport@gmail.com</a> with your display name and we'll do it for you. Deleting your account doesn't cancel an App Store subscription; cancel that in iPhone Settings.</li>
 <li><strong>See, export or correct your data.</strong> Email us and we'll send you a copy or fix anything that's wrong.</li>
 <li><strong>Withdraw consent.</strong> You can stop Aflutter collecting heart rate data at any time by not taking readings, turning off camera access in iPhone Settings, or asking us to delete your data. Withdrawing consent doesn't affect anything we did before you withdrew it.</li>
 <li><strong>Setup questions</strong> are optional. You can skip them.</li>
